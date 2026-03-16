@@ -10,7 +10,6 @@ public class ChampionshipStatistics {
         if (drivers.size() == 0) {
             return 0;
         }
-
         int totalPoints = ChampionshipManager.getTotalChampionshipPoints();
 
         return (double) totalPoints / drivers.size();

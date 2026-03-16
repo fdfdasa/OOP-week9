@@ -1,8 +1,5 @@
 package car;
 
-/**
- * Abstract base class representing a generic rally car.
- */
 public abstract class RallyCar {
     protected String make;
     protected String model;
@@ -14,10 +11,6 @@ public abstract class RallyCar {
         this.horsepower = horsepower;
     }
 
-    /**
-     * Calculates the performance rating of the car.
-     * @return performance rating as a double.
-     */
     public abstract double calculatePerformance();
     
     // Getters
