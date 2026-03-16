@@ -23,8 +23,8 @@ public class RallyChampionship {
 
         // Race 1: Finland
         RallyRaceResult finland = new RallyRaceResult("Rally Finland", "Jyväskylä");
-        finland.recordResult(d1, 1, 25);
-        finland.recordResult(d3, 2, 18);
+        finland.recordResult(d1, 1, 30);
+        finland.recordResult(d3, 2, 29);
         finland.recordResult(d2, 3, 15);
         finland.recordResult(d4, 4, 12);
         manager.addRaceResult(finland);
