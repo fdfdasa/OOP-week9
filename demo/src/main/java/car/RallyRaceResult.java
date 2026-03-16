@@ -32,6 +32,10 @@ public class RallyRaceResult implements RaceResult {
 
     @Override
     public List<Driver> getResults() {
-        return new ArrayList<>(results.keySet());
+        List<Driver> sortedDrivers = new ArrayList<>(results.keySet());
+        
+        sortedDrivers.sort((d1, d2) -> results.get(d2).compareTo(results.get(d1)));
+        
+        return sortedDrivers;
     }
 }

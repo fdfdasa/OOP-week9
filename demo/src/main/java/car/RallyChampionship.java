@@ -36,8 +36,8 @@ public class RallyChampionship {
 
         // Race 2: Monte Carlo
         RallyRaceResult monaco = new RallyRaceResult("Monte Carlo Rally", "Monaco");
-        monaco.recordResult(d2, 1, 25);
-        monaco.recordResult(d4, 2, 18);
+        monaco.recordResult(d2, 2, 29);
+        monaco.recordResult(d4, 1, 30);
         monaco.recordResult(d1, 3, 15);
         monaco.recordResult(d3, 4, 12);
         manager.addRaceResult(monaco);
