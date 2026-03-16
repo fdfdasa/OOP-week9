@@ -7,10 +7,14 @@ import java.util.Map;
 public class ChampionshipStatistics {
 
     public static double calculateAveragePointsPerDriver(List<Driver> drivers) {
-        if (drivers.size() == 0) {
+        if (drivers == null || drivers.isEmpty()) {
             return 0;
         }
-        int totalPoints = ChampionshipManager.getTotalChampionshipPoints();
+        
+        int totalPoints = 0;
+        for (Driver driver : drivers) {
+            totalPoints += driver.getPoints();
+        }
 
         return (double) totalPoints / drivers.size();
     }
